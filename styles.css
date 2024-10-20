@@ -21,6 +21,7 @@ body {
   text-shadow: 0 0 20px #FF4500, 0 0 30px #FFD700; /* Glowing effect */
   padding: 20px; /* Padding around text */
   border-radius: 10px; /* Rounded corners */
+  width: 90%; /* Limit width for smaller screens */
 }
 
 h1 {
@@ -37,6 +38,28 @@ p {
   max-width: 800px; /* Limit width for better readability */
   margin-left: auto;
   margin-right: auto; /* Center the paragraph */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3em; /* Adjust heading size for smaller screens */
+  }
+  
+  p {
+    font-size: 1.5em; /* Adjust paragraph size for smaller screens */
+    padding: 0 10px; /* Add padding for better readability */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5em; /* Further adjust heading size for very small screens */
+  }
+  
+  p {
+    font-size: 1.2em; /* Further adjust paragraph size for very small screens */
+  }
 }
 
 /* Pulsing animation */
